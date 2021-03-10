@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "91501c68-7c61-41cf-b9a9-c3a30c0eb3db",
+		"name": "ombd",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "buscando una peli por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt0462538&apikey=a01c681a",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt0462538"
+						},
+						{
+							"key": "apikey",
+							"value": "a01c681a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "buscnado todas las pelis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.omdbapi.com/?apikey=a01c681a&s=Movie",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "apikey",
+							"value": "a01c681a"
+						},
+						{
+							"key": "s",
+							"value": "Movie"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
